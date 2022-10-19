@@ -1,0 +1,90 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.box {
+    width: 840px;
+    height: 450px;
+    margin: 0 auto; 
+    background-image: url("./PokÇmon+Gotta+Catch+\'Em+All_Logo_EN_800px_150dpi.png");
+    background-repeat: no-repeat;
+    background-size: 800px 400px;
+}
+
+.pokemon-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.pokemon-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: 1px solid black;
+    margin-bottom: 100px;
+    margin-right: 25px;
+    margin-left: 25px;
+}  
+
+.pokemon-title {
+    width: 248px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(47, 83, 150);
+    margin: 0;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.pokemon-img {
+    background-color: lightblue;
+}
+
+.pokemon-span {
+    position: absolute;
+    top: calc(0% - 10px);
+    left: calc(100% - 20px);
+    color: #fff;
+    padding: 3px 10px;
+    background-color: red;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.pokemon-time {
+    position: absolute;
+    top: calc(100% - 70px);
+    left: calc(100% - 30px);
+    color: black;
+    padding: 3px 10px;
+    background-color: yellow;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.pokemon-text {
+    width: 248px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+    padding: 20px 0;
+    background-color: pink;
+    border-top: 1px solid darkcyan;
+}
