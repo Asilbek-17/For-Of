@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Pokemons</title>
 </head>
 <body>
-
+    
     <div class="container">
         <div class="box">
-
+            
         </div>
+        
+        <form class="js-form d-flex align-items-center mb-5" method="post" autocomplete="off">
+            <input class="search-inp form-control w-25 p-2 border-1 rounded-3 me-4" type="search" name="poke-search" placeholder="Search Pokemons">
+            <select class="form-select js-select w-25 me-4" aria-label="Default select example">
+                <option value="all" selected>All Weaknesses</option>
+            </select>
+            <select class="form-select w-25 js-sort me-3" aria-label="Default select example">
+                <option class="sort-option" value="all" selected="">Sort Pokemons</option>
+                <option class="sort-Az" value="Az">A-Z</option>
+                <option class="sort-option" value="Za">Z-A</option>
+                <option class="sort-option" value="No">Number : 0 - 151</option>
+                <option class="sort-option" value="On">Number : 151 - 0</option>
+                <option class="sort-option" value="Tz">Weight : light - heavy</option>
+                <option class="sort-option" value="Zt">Weight : heavy - light</option>
+              </select>
+            <button class="btn btn-outline-success p-2" type="submit">Search</button>
+        </form>
+        
         <ul class="pokemon-list">
-
+            
         </ul>
     </div>
-
+    
     <script src="./pokemons.js"></script>
     <script src="./script.js"></script>
 </body>
